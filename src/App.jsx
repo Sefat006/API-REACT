@@ -6,7 +6,9 @@ const App=()=> {
   let myPTag = useRef();
   
   const fetchData = async () =>{
-    const res = await fetch(`https://dummyjson.com/products/1`);
+    const url = `https://dummyjson.com/products/1`;
+    // const res = await fetch(`https://dummyjson.com/products/1`);
+    const res = await fetch(url);
      APIData.current = await res.json();    
   }
 
